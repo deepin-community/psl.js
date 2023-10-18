@@ -3,5 +3,5 @@ opts=\
 dversionmangle=auto,\
 repack,\
 repacksuffix=+ds,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/psl.js-$1.tar.gz/ \
- https://github.com/lupomontero/psl/releases .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*v?(\d[\d\.-]*@ARCHIVE_EXT@)/psl.js-$1/ \
+ https://github.com/lupomontero/psl/tags .*/archive/.*/v?([\d\.]+)@ARCHIVE_EXT@

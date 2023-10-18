@@ -13,5 +13,5 @@ override_dh_auto_build:
 	patch -p1 <debian/es5-hook.diff
 	NODE_PATH=debian/node_modules rollup -c debian/rollup.config.js
 	rm -f dist/index.js
-	uglifyjs.terser -o dist/psl.min.js dist/psl.js
+	terser -o dist/psl.min.js dist/psl.js
 	dh_auto_build

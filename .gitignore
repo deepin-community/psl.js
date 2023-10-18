@@ -1,1 +1,4 @@
-.pc/
+.DS_Store
+*.swp
+coverage/
+node_modules/
