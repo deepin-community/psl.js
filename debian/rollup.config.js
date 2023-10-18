@@ -1,9 +1,9 @@
-import nodeResolve from "@rollup/plugin-node-resolve";
-import babel from "@rollup/plugin-babel";
-import commonjs from '@rollup/plugin-commonjs';
-import json from '@rollup/plugin-json';
-import nodePolyfills from 'rollup-plugin-node-polyfills';
-export default {
+const nodeResolve = require("@rollup/plugin-node-resolve").nodeResolve;
+const babel = require("@rollup/plugin-babel");
+const commonjs = require('@rollup/plugin-commonjs');
+const json = require('@rollup/plugin-json');
+const nodePolyfills = require('rollup-plugin-node-polyfills');
+module.exports = {
 	input: "dist/index.js",
 	plugins: [
 		json({
@@ -17,7 +17,7 @@ export default {
 			extensions: [ '.js', '.json' ],
 			mainFields: ['module', 'main'],
 			preferBuiltins: false,
-			moduleDirectories: ['/usr/share/nodejs'],
+			modulePaths: ['/usr/share/nodejs'],
 		}),
 		babel(),
 		nodePolyfills()

@@ -1,3 +1,47 @@
+psl.js (1.8.0+ds-9) unstable; urgency=medium
+
+  * team upload
+  * Replace /releases by /tags in GitHub urls
+
+ -- Yadd <yadd@debian.org>  Mon, 31 Oct 2022 09:26:37 +0100
+
+psl.js (1.8.0+ds-8) unstable; urgency=medium
+
+  * Team upload
+  * Add fix for rollup 3 (Closes: #1022654)
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Oct 2022 14:35:12 +0200
+
+psl.js (1.8.0+ds-7) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Drop dependency to nodejs
+  * Update rollup configuration for recent @rollup/plugin-node-resolve
+    (Closes: #1022374)
+
+ -- Yadd <yadd@debian.org>  Mon, 24 Oct 2022 08:48:02 +0200
+
+psl.js (1.8.0+ds-6) unstable; urgency=medium
+
+  * team upload
+
+  * use and build-depend on terser (not uglifyjs.terser)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 02 Dec 2021 21:49:46 +0100
+
+psl.js (1.8.0+ds-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix debian/watch
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 12:57:24 +0100
+
 psl.js (1.8.0+ds-4) unstable; urgency=medium
 
   * Team upload
